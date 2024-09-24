@@ -1,0 +1,18 @@
+meta {
+  name: create-tweet
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/users
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username" : "Avner Caleb",
+    "password" : "123456"
+  }
+}
